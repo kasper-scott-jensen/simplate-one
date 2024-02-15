@@ -1,9 +1,9 @@
 <script>
-    import { Router, Route } from 'svelte-navigator'
+    import { Router, Route } from 'svelte-routing'
 
-    import Index from './pages/Index.svelte'
+    import Home from './pages/Home.svelte'
 </script>
 
-<Router primary={false}>
-    <Route path={'/'} component={Index} />
+<Router>
+    <Route path={'/'} component={Home} />
 </Router>
